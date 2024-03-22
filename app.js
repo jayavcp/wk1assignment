@@ -1,4 +1,5 @@
 console.log("hello universe");
+console.dir(document);
 //selecting the elements by id
 const music1 = document.getElementById("music1");
 const playBtn = document.getElementById("playBtn");
