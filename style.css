@@ -3,6 +3,7 @@ html,
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(20, 20, 196);
 }
 
 h1 {
@@ -10,21 +11,56 @@ h1 {
 }
 header {
   /* Background color included incase image doesn't load */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   background-color: rgb(20, 20, 196);
-  background-image: url("uhura.jpg");
-  background-image: url("guinan.jpg");
-  background-image: url("janeway.jpg");
-  /* background-size: cover; */
-  background-position: center top;
-  background-blend-mode: difference;
   color: white;
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.feature {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.spaceimg1 {
+  background-image: url("spaceimg1.jpg");
+}
+
+.spaceimg2 {
+  background-image: url("spaceimg2.jpg");
+}
+
+.spaceimg3 {
+  background-image: url("spaceimg3.jpg");
+}
+
+button {
+  color: whitesmoke;
+}
+
+main {
+  width: 100vh;
+  height: 100vh;
+  background-image: url("spaceimg1.jpg");
+  color: whitesmoke;
+  /* background-image: url("spaceimg2.jpg"); */
+  /* background-image: url("spaceimg3.jpg"); */
 }
 
 a {
-  color: fuchsia;
+  color: rgb(233, 35, 94);
   font-weight: 700;
+  background-color: rgb(20, 20, 196);
 }
 .backgroundimages {
   display: flex;
@@ -33,4 +69,37 @@ a {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.readmore {
+  margin-top: 1.2rem;
+  display: inline-block;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  opacity: 1;
+  color: #fff;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 1.2rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+}
+
+.titlepage {
+  position: absolute;
+  bottom: 200px;
+  left: 3rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
 }
